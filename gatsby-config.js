@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/', // Change to `/running_page` when running on github pages
+  pathPrefix: process.env.PATH_PREFIX || '/',
   siteMetadata: {
     siteTitle: 'Running Page',
     siteUrl: 'https://running.miaowu.org/',
@@ -23,6 +23,13 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: './src/static/',
+      },
+    },
+    {
+      resolve: "gatsby-plugin-vercel",
+      options: {
+        // (optional) Prints metrics in the console when true
+        debug: false,
       },
     },
     {
