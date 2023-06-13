@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
         <meta property="og:title" content={siteTitle} />
         <meta property="og:type" content="profile.Joey" />
         <meta property="og:url" content="https://runs.miaowu.org/" />
-        <meta property="og:image" content={logo} />
+        
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
