@@ -15,7 +15,11 @@ const Layout = ({ children }) => {
         <html lang="en" />
         <title>{siteTitle}</title>
         <meta name="description" content={description} />
-        <meta name="keywords" content="running" />
+        <meta name="keywords" content="running, music, endurance, sweat" />
+        <meta property="og:title" content={siteTitle} />
+        <meta property="og:type" content="profile.Joey" />
+        <meta property="og:url" content="https://runs.miaowu.org/" />
+        <meta property="og:image" content={logo} />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"

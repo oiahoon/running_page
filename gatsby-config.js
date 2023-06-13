@@ -3,8 +3,8 @@ module.exports = {
   siteMetadata: {
     siteTitle: 'Running Page',
     siteUrl: 'https://running.miaowu.org/',
-    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtc69JxHNcmN1ETpMUX4dozAgAN6iPjWalQ&usqp=CAU',
-    description: 'Personal site and blog',
+    logo: 'https://p.ipic.vip/xdsm0i.jpg',
+    description: 'Running is a lot like life. Only 10 percent of it is exciting. 90 percent of it is slog and drudge. —— Dave Bedford',
     navLinks: [
       {
         name: 'Blog',
