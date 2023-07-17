@@ -85,7 +85,7 @@ export {
 };
 
 const nike = 'rgb(224,237,94)'; // if you want change the main color change here src/styles/variables.scss
-const onice = 'rgb(106, 176, 76)'; 
+const onice = 'rgb(255, 217, 17)'; 
 
 // If your map has an offset please change this line
 // issues #92 and #198
