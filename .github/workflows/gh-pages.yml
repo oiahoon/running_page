@@ -102,18 +102,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          # Git branch where site will be deployed
-          target_branch: gh-pages
-          # Create incremental commit instead of doing push force
-          keep_history: true
-          # Build directory to deploy
-          build_dir: public
-          # Write the given domain name to the CNAME file
-          fqdn: running.miaowu.org # optional
-          # Prevent Jekyll from building the site
-          jekyll: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Upload dist repository
           path: './dist'
       - name: Deploy to GitHub Pages

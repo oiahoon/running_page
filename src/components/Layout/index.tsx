@@ -26,7 +26,10 @@ const Layout = ({ children }: React.PropsWithChildren) => {
         />
       </Helmet>
       <Header />
-      <div className="pa3 pa5-l mb5 cf">{children}</div>
+      <div className="pa3 pa5-l mb5 cf">
+        {children}
+        <SpeedInsights />
+        </div>
     </>
   );
 };
