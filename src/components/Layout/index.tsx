@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
 import useSiteMetadata from '@/hooks/useSiteMetadata';
 import styles from './style.module.scss';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const Layout = ({ children }: React.PropsWithChildren) => {
   const { siteTitle, description } = useSiteMetadata();
@@ -18,7 +19,7 @@ const Layout = ({ children }: React.PropsWithChildren) => {
         <meta property="og:title" content={siteTitle} />
         <meta property="og:type" content="profile.Joey" />
         <meta property="og:url" content="https://runs.miaowu.org/" />
-        
+
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
