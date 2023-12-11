@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
 import useSiteMetadata from '@/hooks/useSiteMetadata';
 import styles from './style.module.scss';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const Layout = ({ children }: React.PropsWithChildren) => {
   const { siteTitle, description } = useSiteMetadata();
@@ -28,7 +27,6 @@ const Layout = ({ children }: React.PropsWithChildren) => {
       <Header />
       <div className="pa3 pa5-l mb5 cf">
         {children}
-        <SpeedInsights />
         </div>
     </>
   );
