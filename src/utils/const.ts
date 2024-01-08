@@ -1,8 +1,9 @@
 // const
 const MAPBOX_TOKEN =
-  'pk.eyJ1IjoieWlob25nMDYxOCIsImEiOiJja2J3M28xbG4wYzl0MzJxZm0ya2Fua2p2In0.PNKfkeQwYuyGOTT_x9BJ4Q';
+  'pk.eyJ1Ijoib25pY2UiLCJhIjoiY2xkanRnZG1zMGR5cTN2bGc2eGFjdTNqZSJ9.fdmy2M1PyAOWs8ofaHMt8A';
 const MUNICIPALITY_CITIES_ARR = [
   '北京市',
+  '成都市',
   '上海市',
   '天津市',
   '重庆市',
@@ -41,7 +42,7 @@ const IS_CHINESE = true;
 const USE_ANIMATION_FOR_GRID = false;
 const CHINESE_INFO_MESSAGE = (yearLength: number, year: string): string => {
   const yearStr = year === 'Total' ? '所有' : ` ${year} `;
-  return `我用 App 记录自己跑步 ${yearLength} 年了，下面列表展示的是${yearStr}的数据`;
+  return `我用 AppleWatch 记录自己跑步 ${yearLength} 年了，下面列表展示的是${yearStr}的数据`;
 };
 const ENGLISH_INFO_MESSAGE = (yearLength: number, year: string): string =>
   `Running Journey with ${yearLength} Years, the table shows year ${year} data`;
@@ -89,9 +90,10 @@ export {
 };
 
 const nike = 'rgb(224,237,94)'; // if you want change the main color change here src/styles/variables.scss
+const onice = 'rgb(255, 217, 17)'; 
 
 // If your map has an offset please change this line
 // issues #92 and #198
 export const NEED_FIX_MAP = false;
-export const MAIN_COLOR = nike;
+export const MAIN_COLOR = onice;
 export const PROVINCE_FILL_COLOR = '#47b8e0';
