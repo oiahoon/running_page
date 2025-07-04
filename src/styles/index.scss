@@ -126,3 +126,21 @@ h5 .header-link {
 .markdown-content .gatsby-resp-image-wrapper {
   margin-top: 1rem;
 }
+
+// 响应式布局改进
+@media (max-width: 768px) {
+  .fl.w-30-l {
+    width: 100% !important;
+    float: none !important;
+    margin-bottom: 1rem;
+  }
+  
+  .fl.w-70-l {
+    width: 100% !important;
+    float: none !important;
+  }
+  
+  h1.f1 {
+    font-size: 2rem !important;
+  }
+}

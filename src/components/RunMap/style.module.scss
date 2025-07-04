@@ -34,12 +34,16 @@
 
 .runTitle {
   height: 29px;
-  width: 710px;
+  max-width: calc(100% - 140px);
+  width: auto;
   position: absolute;
   bottom: 0px;
   left: 120px;
   font-family: $global-font-family;
   cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .lights {
